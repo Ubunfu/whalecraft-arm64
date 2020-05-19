@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  mc:
+    build: .
+    ports:
+      - "25565:25565"
+    restart: always
+    environment:
+      EULA: "TRUE"
+      TYPE: "VANILLA"
+      VERSION: "1.15.2"
+      ONLINE_MODE: "TRUE"
+      SERVER_NAME: "PiCraft"
+      MEMORY: "3G"
+      DIFFICULTY: "normal"
+      PVP: "true"
+      LEVEL_TYPE: "DEFAULT"
+    volumes:
+      - "/home/ubuntu/mc-container-data:/data"

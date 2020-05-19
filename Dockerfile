@@ -1,0 +1,1 @@
+FROM carlosedp/minecraft-server:arm64
